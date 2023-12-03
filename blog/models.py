@@ -8,7 +8,7 @@ class Post(models.Model):
         "auth.User",
         on_delete=models.CASCADE,
     )    
-    body = models.TextField()
+    body = models.TextField(blank=True, null=True)
 
 
 
